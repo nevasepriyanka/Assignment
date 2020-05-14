@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Reema",
+    "rollNumber" : "101",
+    "age": "6",
+    "standard": "1st"
+  },
+  {
+    "name": "Riya",
+    "rollNumber": "202",
+    "age": "7",
+    "standard": "2st"
+  },
+  {
+    "name": "Khushi",
+    "rollNumber": "303",
+    "age": "8",
+    "standard": "3st"
+  },
+  {
+    "name": "Manali",
+    "rollNumber": "404",
+    "age": "9",
+    "standard": "4st"
+  },
+  {
+    "name": "Ankita",
+    "rollNumber": "505",
+    "age": "10",
+    "standard": "5st"
+  }
+]
