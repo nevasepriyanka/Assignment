@@ -62,7 +62,7 @@ private StudentsAdapter studentsAdapter;
 
             studentListViewModel.addStudents(new Student(students.get(i).getName(), students.get(i).getRollNumber(), students.get(i).getAge(), students.get(i).getStandard()));
         }
-        // observe for notes data changes
+        // observe for students data changes
 
         studentListViewModel.getAllNotes().observe(this, new Observer<List<Student>>() {
             @Override
