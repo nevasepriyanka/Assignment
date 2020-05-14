@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="student"
+            type="com.example.assigntest.database.model.Student"/>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cvStudent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="3dp">
@@ -19,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:text="manav"
+                android:text="@{`Name : ` + student.name}"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="@color/cardview_dark_background"
                 android:textStyle="bold" />
@@ -28,21 +40,21 @@
                 android:id="@+id/age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="6"
+                 android:text="@{`Age : ` + student.age}"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
             <TextView
                 android:id="@+id/rollnumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="102"
+                android:text="@{`RollNumber : ` + student.rollNumber}"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
             <TextView
                 android:id="@+id/standard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1st"
+                android:text="@{`Standard : ` + student.standard}"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
 
@@ -50,4 +62,5 @@
 
     </androidx.cardview.widget.CardView>
 
-</RelativeLayout>
+    </LinearLayout>
+</layout>
